@@ -1,80 +1,53 @@
+<?php
+//start the session
+session_start();
+?>
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Enter Details </title>
-         
-         <!--jQuery-->
-         <script src "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         
-   </head>
+        <title> Enter Details</title>
+        
+        
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
     
     <body>
-        <h4>Enter payment details</h4>
         
-        <br/>
+        <h4>Please enter your payment details.</h4>
         
-        <form method= "POST" action = "Ebus3.php">
+            <br />
+            
+            <form method = "POST" action = "Ebus3.php">
+                
+                <label for="user_pin">
+                     PIN 
+                </label>
+                
+                <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
+                    
+                <button type="Submit" id="btnPurchase" disabled> 
+                    Proceed with Purchase 
+                </button>
+                
+            </form>
+            
+            <br />
+            
+            <button onClick="validateDetails()"> Validate </button>
         
-        <label for "salesforce"> 
-        <input type="radio" id="salesforce" name ="product" checked Onclick = "disablebtnProceed()"/>
-        SalesForce @ $100
-        </label>
+        <script type="text/javascript" src="ebus2_validator.js"></script>
         
-        <br/>
-        
-        <!DOCTYPE html>
-<html>
-    <head>
-        <title>Select Product </title>
-         
-         <!--jQuery-->
-         <script src "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-         <script type = "text/javascript" src="cost_calc.js"></script>
-   </head>
-    
-    <body>
-        <h4> Select a product</h4>
-        
-        <br/>
-        
-        <form method= "Post" action = "Ebus2.php">
-        
-        <label for "salesforce"> 
-        <input type="radio" id="salesforce" name ="product" checked Onclick = "disablebtnProceed()"/>
-        SalesForce @ $100
-        </label>
-        
-        <br/>
-        
-         <label for "aws"> 
-        <input type ="radio" id="aws" name ="product"  Onclick = "disablebtnProceed()"/>
-        SalesForce @ $300
-        </label>
-        
-        <br/>
-        <br/>
-        
-        <label for "subtotal">
-            Sub Total
-            <input type ="text" id ="subtotal" value ="0.00" readonly/>
-        </label>
-        
-        <br/>
-        
-         <label for "total">
-            Total
-            <input type ="text" id ="total" value ="0.00" readonly/>
-        </label>
-        
-        <br/>
-        
-        <button type ="submit" id ="btnProceed" disabled>Add to Shopping Cart</button>
-        
-        </form>
-        
-        <br/>
-        
-        <button onClick="calcSub()">Calculate Cost</button>
-        <a role="button" href= "Ebus1.php" > Clear Choice </a>
+        <?php
+        //set variables for the session
+        $_SESSION["total"] = $_POST["total"];
+        ?>
     </body>
+    
+    
+    
 </html>

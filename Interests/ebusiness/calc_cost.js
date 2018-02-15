@@ -5,11 +5,11 @@ function calcSub(){
     var argSubTotal;
     
     if(document.getElementbyId("salesforce").checked) { 
-    argSubTotall = 100;
+    argSubTotal = 100;
     
 }
  else {
-     argsubtotal  = 300;
+     argSubtotal  = 300;
      
  }
  
