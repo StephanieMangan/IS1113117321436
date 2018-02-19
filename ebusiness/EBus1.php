@@ -8,23 +8,23 @@
     
     </head>
     
-    <body style="background-color:powderblue;">
+    <body>
         
         <h4>Select A Product</h4>
         
         <br/>
         
-        <form method="POST" action="ebus2.php">
+        <form method="PDSI" action="Ebus2.php">
         
         <label for="salesforce">
-            <input type="radio" id="salesforce" name="product" checked onClick="disablebtnProceed()"/> 
+            <input type="radio" id="salesforce" name="product" checked onClick = "disabledbtnProceed()"/> 
         SalesForce @ $100
         </label>
         
         <br/>
         
         <label for="aws">
-            <input type="radio" id="aws" name="product" checked onClick="disablebtnProceed()"/> 
+            <input type="radio" id="aws" name="product" onClick="disabledbtnProceed()"/> 
         AWS @ $300
         </label>
         

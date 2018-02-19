@@ -14,6 +14,8 @@ session_start();
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script type = "text/javascript" src = "ebus2_validator.js"></script>
     </head>
     
     <body>
@@ -22,7 +24,7 @@ session_start();
         
             <br />
             
-            <form method = "POST" action = "Ebus3.php">
+            <form method = "POST" action = "eBus3.php">
                 
                 <label for="user_pin">
                      PIN 
@@ -40,8 +42,7 @@ session_start();
             
             <button onClick="validateDetails()"> Validate </button>
         
-        <script type="text/javascript" src="ebus2_validator.js"></script>
-        
+
         <?php
         //set variables for the session
         $_SESSION["total"] = $_POST["total"];
