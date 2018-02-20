@@ -1,7 +1,45 @@
-html,body{
-  width:100%;
+*{
+  margain:0;
+  
 }
-body{
+
+html,body{
   background-image: url("https://thumbs.dreamstime.com/b/computer-laptop-black-screen-hot-coffee-cup-wooden-table-top-blurred-pool-beach-background-business-concept-83207822.jpg")  ;
   background-size: cover;
+  width:100%;
+}
+
+.mainheading{
+  text-align:center;
+  color:Red;
+}
+
+ul li a {
+  text-decoration:none;
+  color:black;
+}
+  
+  ul{
+    height:30%;
+    Width:100%;
+    background:#97d6f7;
+    text-align: center;
+    
+  }
+
+ul li{
+  list-style: none;
+  display: inline;
+position: relative;  
+margin-left:130px;
+transform:translate(20%,30%);
+font-size:26px;
+
+
+}
+
+ul li a:hover{
+  color:pink;
+  background:Blue;
+  padding:3%;
 }
