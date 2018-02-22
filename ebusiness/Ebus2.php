@@ -2,9 +2,6 @@
 //start the session
 session_start();
 ?>
-
-
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,7 +12,7 @@ session_start();
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         
-        <script type = "text/javascript" src = "ebus2_validator.js"></script>
+        <script type="text/javascript" src ="eBus2_validator.js"></script>
     </head>
     
     <body>
@@ -24,7 +21,7 @@ session_start();
         
             <br />
             
-            <form method = "POST" action = "eBus3.php">
+            <form method="POST" action="eBus3.php">
                 
                 <label for="user_pin">
                      PIN 

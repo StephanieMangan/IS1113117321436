@@ -4,17 +4,16 @@ function calcSub(){
     
     var argSubTotal;
     
-    if(document.getElementbyId('salesforce').checked) { 
+    if(document.getElementById("salesforce").checked) { 
     argSubTotal = 100;
-    
-}
- else {
+    }
+    else {
      argSubTotal = 300;
- }
+     }
  
- display (argSubTotal);
+    display (argSubTotal);
+}
  
- }
  
  function display(parm1){
      
