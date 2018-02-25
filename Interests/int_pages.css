@@ -1,16 +1,17 @@
 #section1{
-Background-color: rgb(238, 0, 90);
+Background-color: rgb(127,255,212);
 }
 
 #section2{
-Background-color: rgb(44, 62, 80);
+Background-color: rgb(138,43,226);
 }
 
 #section3{
-Background-color: rgb(51, 153, 204);
+Background-color: rgb(102,51,153);
 }
 
 .section{
     text-align: center;
     color: white;
+    top: 20%;
 }
