@@ -1,24 +1,48 @@
 /* global $ */
-
+ var argSubTotal;
+ 
 function calcSub(){
     
-    var argSubTotal;
+   
     
-    if(document.getElementById("salesforce").checked) { 
+    if(document.getElementById("Salesforce").checked) { 
     argSubTotal = 100;
-    }
-    else {
+    
+   } else if  (document.getElementById("AWS").checked) { 
      argSubTotal = 300;
-     }
- 
-    display (argSubTotal);
+     
+    } else if  (document.getElementById("Amazon").checked) { 
+     argSubTotal = 400;
+     
+     } else  {
+         argSubTotal = 200;
+}
+
+calcDisVatTotal(argSubTotal);
+
+}
+
+function calcDisVatTotal(parmSubTotal){
+    var SubTotal = argSubTotal;
+    var argVat;
+    var argDiscount;
+     var argtotal;
+     
+     argDiscount = argSubTotal * 0.05;
+     argVat = argSubTotal * 0.1;
+     argtotal = ((argSubTotal - argDiscount) + argVat);
+     
+     display(argSubTotal, argDiscount, argVat, argtotal);
 }
  
  
- function display(parm1){
+ function display(parm1, parm2, parm3, parm4){
      
- document.getElementById("subtotal").value = parm1 ;
- document.getElementById("total").value = parm1 ;
+ document.getElementById("SubTotal").value=parm1;
+ document.getElementById("Discount").value=parm2;
+  document.getElementById("Vat").value=parm3;
+ document.getElementById("total").value=parm4;
+
  
  enablebtnProceed();
  
@@ -33,4 +57,6 @@ function enablebtnProceed(){
      $('#btnProceed').prop('disabled', true);
      
  }
+ 
+ 
  
