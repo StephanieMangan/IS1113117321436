@@ -21,23 +21,34 @@
 	                  border-style:ridge;
 	             }
 	 
-	 h1 {
-    color: navy;
-    font-family: verdana;
+	h1 {
+    color: black;
+    font-family: courier;
     font-size: 250%;
-}            
-	 ul {
+}  
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: #dddddd;
     font-size: 150%;
 }
-	
-	li{
-	    float: left;
-	     display: inline;
-	}
+li {
+    display: inline;
+}
+ul li a:hover{
+  color:black;
+  background:blue;
+}
+
+ul li{
+  list-style: none;
+  display: inline;
+position: relative;  
+margin-left:130px;
+transform:translate(20%,30%);
+font-size:22px;
+}
 	
 	
 	input[type=text] {
@@ -80,11 +91,11 @@
         
         
       <ul>
-  <li><a href="../homepage.html">Home</a></li>
+ <li><a href="../homepage.html">Home</a></li>
   <li><a href="../Interests/Sports.html">Interests</a></li>
   <li><a href="../CV/CV_page1.html">CV</a></li>
-   <li><a href="ebusiness/EBus1.php">EBusiness</a></li>
-  
+   <li><a href="../ebusiness/myproduct.html">EBusiness</a></li>
+  <li> <a href="../https://github.com/StephanieMangan/IS1113117321436/graphs/commit-activity"> My Github</a></li>
  
   
 </ul>

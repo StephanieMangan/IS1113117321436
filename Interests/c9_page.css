@@ -1,0 +1,27 @@
+#section1{
+background-color: lightslategrey;
+background-size: cover;
+}
+
+#section2{
+background-color: lightgrey;
+background-size: cover;
+}
+
+#section3{
+    background-color: thistle;
+background-size: cover;
+}
+
+#section4{
+background-color:lightsteelblue;
+background-size: cover;
+}
+
+
+.section{
+    color: black;
+    font-family: courier;
+
+   
+}
