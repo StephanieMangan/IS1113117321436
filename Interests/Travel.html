@@ -23,18 +23,14 @@ ul {
 li {
     display: inline;
 }
-img {
-    float: right;
-    position: absolute;
-    right: 50%;
-    top: 80%;
-}
+
+
         </style>
         
         <meta charset = "utf-8">
         <title>Travel </title>
-         <link rel="stylesheet" href="int_pages.css"   type= "text/css" /> 
-         
+        <link rel="stylesheet" href="int_pages.css"   type= "text/css" /> 
+
          <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
         <!-- Adding bootstrap-->
         
@@ -43,17 +39,19 @@ img {
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
     <!--pagepilling-->
-    <link rel="stylesheet" type="text/css"git href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css" />
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.pagepiling.js"></script>
     
  <script type = "text/javascript">
        $(document).ready(function() {
-	   $('#pagepiling').pagepiling();
+	   $('#pagepiling').pagepiling({
+	       
+	   });
        });
  </script>   
     </head>
@@ -61,44 +59,41 @@ img {
     
     <body>
         
-         <h1 align = "center" style="background-color:DodgerBlue;"  class="mainheading" > Travel... </h1>
-         
+
  <ul>
-  <li><a href="homepage.html">Home</a></li>
-  <li><a href="Interests/Sports.html">Interests</a></li>
-  <li><a href="CV/CV_page1.html">CV</a></li>
-   <li><a href="ebusiness/EBus1.php">EBusiness</a></li>
-  <li><a href="CV/CV_page1.html">CV</a></li>
+  <li><a href="../homepage.html">Home</a></li>
+  <li><a href="../Interests/Sports.html">Interests</a></li>
+  <li><a href="../CV/CV_page1.html">CV</a></li>
+   <li><a href="../ebusiness/EBus1.php">EBusiness</a></li>
+  
  
   
 </ul>
 
+<body style = "background-color:#deabed;"> 
+
         <div id="pagepiling">
-	<div class="section" id= "section1"> Most travelled to: France.
+	<div  class="section" id= "section1"> Most travelled to: France.
 	<br/>
 	Reason : My family have gone to France 4 times together as it has so many differesnt places to travel to. It feels like a new country everytime!
-	<img src="https://frenchmoments.eu/wp-content/uploads/2016/06/Paris-France-%C2%A9-French-Moments.jpg" style="width:150px;height:150px;">
 <br/>
 </div>
-	<div class="section" id= "section2"> Want to visit: China
+	<div  class="section" id= "section2"> Want to visit: China
 	<br/>
 	Reason: It seems like a beautiful country where there are a lot of new cultures and food to experience.
-		<img src="http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1492626808/great-wall-china-tourists-GWOC0417.jpg?itok=SZWsDPFN" style="width:150px;height:150px;">
 <br/>
 	</div>
-	<div class="section" id= "section3">
+	<div  class="section" id= "section3">
 	    Want to settle in: Dublin
 	    <br/>
 	   Reason: My sister lives here and its only a two and a half hour drive from where Im from.
 	   <br/>
-		<img src="https://holeinthedonut.com/wp-content/uploads/2014/08/Ireland-Dublin-Spire-of-Dublin-on-OConnell-Street.jpg" style="width:150px;height:150px;">
-	   
-	  
+<br/>
 	   <br/>
-	    <a href = "cloud9.html" class = "btn btn-dark"> Cloud Services</a>
+	    <a href = "cloud9.html" class = "btn btn-dark">  Go To Cloud Services</a>
        
 	</div>
 	</div>
 
     </body>
-</html>
+    </html>

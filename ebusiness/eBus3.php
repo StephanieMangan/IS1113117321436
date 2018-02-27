@@ -1,64 +1,76 @@
 <?php
-session_start();
-?>
-<!DOCTYPE html>
-<html>
-    <head>
-         <style>
-        h1 {
-    color: navy;
+	session_start();
+	?>
+	<html>
+	    <head>
+	        <title>RECEIPT</title>
+	             <style type = "text/css">
+h1 {
+    color: black;
     font-family: verdana;
-    font-size: 300%;
+    font-size: 250%;
 }
- h2 {
-    color: black;
-    font-family: courier;
-    font-size: 150%;
- }
-p  {
-    color: black;
-    font-family: courier;
-    font-size: 160%;
-}
-            ul {
+
+	ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: #dddddd;
-    font-size: 100%;
+    font-size: 150%;
 }
 li {
     display: inline;
 }
-        </style>
+
+	    #mainContent {
+	        top:8em;
+	        left:25em;
+	        width:30em;
+	        height:25em;
+	       position:absolute;
+	       border-style:groove;
+	                 }
+	             </style>
+	         </head></PHP>
+	    </head>
+	    <body>
+	        
+	       <h1 align = "center" style="background-color:DodgerBlue;"  class="mainheading" > Your purchase reciept </h1>
         
-        <title>Reciept</title>
-    </head>
-    <body>
-       <h1 style="background-color:DodgerBlue;" style="color:Navy;" class="mainheading" > Reciept </h1>
-   
-           
+        
       <ul>
-  <li><a href="homepage.html">Home</a></li>
-  <li><a href="Interests/Sports.html">Interests</a></li>
-  <li><a href="CV/CV_page1.html">CV</a></li>
-   <li><a href="myproduct.html">My Products</a></li>
-  <li><a href="https://github.com/StephanieMangan/IS1113117321436/graphs/commit-activity">GitHub</a></li>
- 
+  <li><a href="../homepage.html">Home    </a></li>
+ <li><a href="../Interests/Sports.html">Interests    </a></li>
+  <li><a href="../CV/CV_page1.html">CV    </a></li>
+   <li><a href="../ebusiness/EBus1.php">EBusiness    </a></li>
+
   
 </ul>
-        
-        <h2 align ="center">This is your official reciept</h2>
-        
-        
-        <?php
-        //Echo session variables that were set on a previous page
-        echo "Name: " . $_SESSION["name"] . ".";
-        echo "Email: " . $_SESSION["email"] . ".";
-        echo "Total is " . $_SESSION["total"] . ".";
-       
-        ?>
-        
-        <p align = "center"> Thank you for purchasing a product from SM Technoloiges.  </p>
-     </body>
-</html>
+	        <br/>
+	        <div id = "mainContent">
+	        <?php
+	        //Echo session varaibles that were set to the previous page
+	        echo "Total Price is " .$_SESSION["total"] . "."; 
+	        ?>
+	        <br/>
+	        <br/>
+
+	         <?php
+	        //Echo session varaibles that were set to the previous page
+	        echo "Name: " .$_SESSION["name"] . ".";
+	        ?>
+	        	        <br/>
+	        <br/>
+
+	         <?php
+	        //Echo session varaibles that were set to the previous page
+	         echo "Email: " .$_SESSION["email"] . ".";
+	        ?>
+	       
+	        </div>
+	        
+	        <br/>
+	      
+ 
+	    </body>
+	</html>

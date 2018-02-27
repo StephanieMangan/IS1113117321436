@@ -1,108 +1,131 @@
 <?php
-//start the session
-session_start();
-?>
-<!DOCTYPE html>
-<html>
-    <head>
-         <style>
-        h1 {
+	// start the session
+	session_start();
+	?>
+	
+
+	<html>
+	    <head>
+	        <title>Enter Details</title>
+	        
+	        <!--jQuery-->
+	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	         <PHP><head><link href="Ebus.css" rel="stylesheet" type="text/css">
+	         <style type = "text/css">
+	             #content {
+	                  top:8em;
+	                  left:25em;
+	                  width:30em;
+	                  height:25em;
+	                  position:absolute;
+	                  border-style:ridge;
+	             }
+	 
+	 h1 {
     color: navy;
     font-family: verdana;
-    font-size: 300%;
-}
- h2 {
-    color: black;
-    font-family: courier;
-    font-size: 150%;
- }
-p  {
-    color: black;
-    font-family: courier;
-    font-size: 160%;
-}
-            ul {
+    font-size: 250%;
+}            
+	 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: #dddddd;
-    font-size: 100%;
+    font-size: 150%;
 }
-li {
-    display: inline;
-}
-        </style>
+	
+	li{
+	    float: left;
+	     display: inline;
+	}
+	
+	
+	input[type=text] {
+	                           border: 2px solid blue;
+	                           border-radius: 4px;
+	                           text-align:center;
+	}
+	input[type=password] {
+	                           border: 2px solid blue;
+	                           border-radius: 4px;
+	                           text-align:center;
+	}
+	 button[type=submit]:disabled {
+	                            border: 2px solid blue;
+	                           border-radius: 4px;
+	                           color: black;
+	                           padding: 5px;
+	                           cursor: pointer;
+	                           
+	       }
+	        button[type=submit]:enabled {
+	                           background-color: #42d7f4;
+	                           border-radius: 2px;
+	                           border:none;
+	                           color: black;
+	                           padding: 5px;
+	                           cursor: pointer;
+	                           
+	       }
+	         </style>
+	         
+	         
+	         
+	         </head></PHP>
+	    </head>
+	    <body>
+	        
+	        
+	     <h1 align = "center" style="background-color:DodgerBlue;"  class="mainheading" > Enter Your Details </h1>
         
-        <title> Enter Details</title>
         
-        
-        <!--jQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        
-        <script type="text/javascript" src ="eBus2_validator.js"></script>
-    </head>
-    
-    <body>
-        
-     <h1 style="background-color:DodgerBlue;" style="color:Navy;" class="mainheading" > Enter your details.  </h1>
-
- <ul>
-  <li><a href="homepage.html">Home</a></li>
-  <li><a href="Interests/Sports.html">Interests</a></li>
-  <li><a href="CV/CV_page1.html">CV</a></li>
-   <li><a href="myproduct.html">My Products</a></li>
-  <li><a href="https://github.com/StephanieMangan/IS1113117321436/graphs/commit-activity">GitHub</a></li>
+      <ul>
+  <li><a href="../homepage.html">Home</a></li>
+  <li><a href="../Interests/Sports.html">Interests</a></li>
+  <li><a href="../CV/CV_page1.html">CV</a></li>
+   <li><a href="ebusiness/EBus1.php">EBusiness</a></li>
+  
  
   
 </ul>
-        
-        <h4 align = "center">Please enter your payment details.</h4>
-        
-            <br />
-            <div align = "center">
-            <form method="POST" action="eBus3.php">
-                
-                <label for="user_pin">
-                     PIN 
-                </label>
-                
-                <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
-                    
-               <button onClick="validateDetails()"> Validate </button>
-               
-               <br/>
-               <br/>
-                
-                <label for="name">
-                     Name 
-                </label>
-                
-                <input type="name" id="name">
-                
-                 <br/>
-               <br/>
-                
-                 <label for="email">
-                     Email 
-                </label>
-                
-                <input type="name" id="email">
-            </form>
-            
-            <br />
-            
-         <button type="Submit" id="btnPurchase" disabled> 
-                    Proceed with Purchase 
-                </button>
+	   
+	        <div id ="content">
+	            <form action="Ebus3.php" method="POST">
+	                    <br>
+	                    <label for = "name">
+	                        <strong> &nbsp; Name:</strong>
+	                        <br>
+	                        &nbsp;<input type ="text" id ="name" name = "name"/>
+	                    </label>
+	                    <br><br>
+	                    <label for "email">
+	                        <strong>&nbsp; Email:</strong>
+	                        <br>
+	                        &nbsp;<input type = "text" id ="email" name="email"/>
+	                    </label>
+	                    <br><br>
+	                    &nbsp;&nbsp;<label for="user_pin"><strong>PIN:</strong></label>
+	                    <br>
+	                   &nbsp;<input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
+	                    <br><br><br>
+	                <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
+	              
+	            </form>
+	            
+	            <br>
+	            <button onClick="validateDetails()">Validate</button>
+	            
+	        </div>
+	        
+	        <script type="text/javascript" src="ebus2_validator.js"></script>
+	        
+	        <?php
+	        //Set session variables
+	        $_SESSION["total"] = $_POST["total"];
+	        $_SESSION["name"] = $_POST["name"];
+	         $_SESSION["email"] = $_POST["email"];
+	        ?>
+	        
+	        </body>
+	</html>
 
-        <?php
-        //set variables for the session
-        $_SESSION["total"] = $_POST["total"];
-        ?>
-        
-        </div>
-    </body>
-    
-    
-    
-</html>
