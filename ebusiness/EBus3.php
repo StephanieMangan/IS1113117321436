@@ -1,17 +1,18 @@
-<!DOCTYPE html>
-<html>
-    <head>
-          <style>
+<?php
+	session_start();
+	?>
+	<html>
+	    <head>
+	        <title>RECEIPT</title>
+	             <style type = "text/css">
 h1 {
-    color: black;
+    color: Black;
     font-family: courier;
     font-size: 250%;
+    top:10em;
+	left:25em;
 }
-p  {
-    color: black;
-    font-family: courier;
-    font-size: 150%;
-}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -35,56 +36,75 @@ margin-left:130px;
 transform:translate(20%,30%);
 font-size:22px;
 }
-img {
-    float: right;
-    position: absolute;
-    right: 20%;
-    top: 20%;
-}
-</style>
-       
-        <title>Stephanie Mangan</title>
-         
-         <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-        <!-- Adding bootstrap-->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </head>
-    <body>
+
+	    #mainContent {
+	        top:8em;
+	        left:25em;
+	        width:30em;
+	        height:25em;
+	       position:absolute;
+	       border-style:groove;
+	                 }
+	             </style>
+	         </head>
+	    </head>
+	    <body>
+	        
+	       <h1 align = "center" style="background-color:DodgerBlue;"  class="mainheading" > Your purchase reciept </h1>
         
-         <h1 align = "center" style="background-color:DodgerBlue;"  class="mainheading" > Personal Information </h1>
-           <ul>
+        
+      <ul>
   <li><a href="../homepage.html">Home</a></li>
   <li><a href="../Interests/Sports.html">Interests</a></li>
-  <li><a href="CV_page1.html">CV</a></li>
-   <li><a href="../ebusiness/myproduct.html">EBusiness</a></li>
+  <li><a href="../CV/CV_page1.html">CV</a></li>
+   <li><a href="myproduct.html">EBusiness</a></li>
   <li> <a href="https://github.com/StephanieMangan/IS1113117321436/graphs/commit-activity"> My Github</a></li>
- 
+
   
 </ul>
+	        <br/>
+	       
+	     
+	     <div id = "maincontent">
+        <?php
+        //Echo session varaibles that were set to the previous page
+        echo "Total Price is $" .$_SESSION["total"] . "."; 
+       ?>
+        <br>
+        <?php
+        //Echo session varaibles that were set to the previous page
+        echo "Name:" .$_SESSION["name"] . ".";
+        ?>
+       <br> 
+        <?php
+        //Echo session varaibles that were set to the previous page
+        echo "Email:" .$_SESSION["email"] . ".";
+        ?>
 
-        <div align = "center">
-        <p><strong>Name:</Strong>Stephanie Mangan</p>
         <br/>
-        <p><strong>Date Of Birth:</strong>04/01/99</p>
         <br/>
-        <p><strong>Age:</Strong>19</p>
         <br/>
-        <p><strong>Address:</strong>04 FortySpring, Clogheen, Cork </p>
         <br/>
-        <p><strong>Email Address:</Strong> steph111@hotmail.com</p>
         <br/>
-        <p><strong>Phone Number:</strong>087*******</p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <br/>
         <br/>
         
+
+<br/>
+<p align = "center"><img src = "https://az616578.vo.msecnd.net/files/2017/02/21/636232341000937145-2058526602_technology.jpg"  style="width:70px;height:70px;"></p>
+<br/>
+<br/>
+<p align = "center"> Thank you for choosing SM Technologies.
+
+</p>
+        </div>
         
         
-        <a href = "cvpage2.html" class = "btn btn-dark">Next</a>
-       </div>
-       
-       <br/>
+        <br/>
        <br/>
        <br/>
        <br/>
@@ -148,7 +168,5 @@ img {
   	</div>
   	
 	<!--</footer>-->
-       
-       
-    </body>
-</html>
+	    </body>
+	</html>

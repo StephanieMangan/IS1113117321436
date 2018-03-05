@@ -101,14 +101,13 @@ font-size:22px;
   <li><a href="../homepage.html">Home</a></li>
   <li><a href="../Interests/Sports.html">Interests</a></li>
   <li><a href="../CV/CV_page1.html">CV</a></li>
-   <li><a href="../ebusiness/myproduct.html">EBusiness</a></li>
-  <li> <a href="../https://github.com/StephanieMangan/IS1113117321436/graphs/commit-activity"> My Github</a></li>
+   <li><a href="myproduct.html">EBusiness</a></li>
+  <li> <a href="https://github.com/StephanieMangan/IS1113117321436/graphs/commit-activity"> My Github</a></li>
  
   
 </ul>
 	        
 	        <div id ="maincontent">
-	            <br>
 	        <form method ="POST" action ="Ebus2.php">
 	            <label for = "salesforce">
 	            &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="salesforce" name="product"  onClick="disablebtnProceed()"/>
@@ -139,7 +138,6 @@ font-size:22px;
 	            <label for = "discount">
 	                <strong>&nbsp; Discount @ 5%:</strong>
 	                <input type = "text" id ="discount" name ="discount" readonly/>
-	                <br> <strong> &nbsp;&nbsp;(-Discount)</strong>
 	            </label>
 	            <br><br>
 	            <label for ="vat">
@@ -167,8 +165,73 @@ font-size:22px;
 	        
 	        <br/>
 	        <div id ="button3">
-	        <a href="Ebus1.php"><button>Clear Choice</a></button>
+	        <a href="EBus1.php"><button>Clear Choice</a></button>
 	        </div>
 	        </div>
+	        
+	        <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+
+       
+       <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div  align = "center" class="row">
+
+            <div align = "center"  class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Me</h2>
+                <p></p>
+                <p><a href="mailto:117321436@umail.ucc.ie">117321436@umail.ucc.ie</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+       
+       <br/>
+       <br/>
+       <br/>
+
+       <!--<footer>-->
+	<div id="footerCV">
+		<div align = "center" id="social_media_icons" >
+		<ul>
+			<li><a href="http://www.facebook.com/" >
+				<img src=images/facebook.png id="icon_size" alt="facebook">
+			</a></li>	
+			<li><a href="https://www.instagram.com/" >
+				<img src=images/instagram.png id="icon_size" alt="instagram">
+			</a></li>					
+			<li><a href="https://www.linkedin.com/in/" >
+				<img src=images/linkedin.png id="icon_size" alt="linkedin">
+			</a></li>	
+			<li><a href="https://twitter.com/" >
+				<img src=images/twitter.png id="icon_size" alt="twitter">
+			</a></li>						
+		</ul>	
+		</div>
+		
+		<br/>
+		<br/>
+		<br/>
+		
+		<div align = "Center" id="copyright">
+  		&copy; Stephanie Mangan
+  		<p></p>
+	</div>
+  	</div>
+  	
+	<!--</footer>-->S
 	    </body>
 	</html>

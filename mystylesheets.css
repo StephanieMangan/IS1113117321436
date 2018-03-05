@@ -3,11 +3,14 @@
   
 }
 
+h1 {
+      font-family: courier;
 
+}
 .mainheading{
   text-align:center;
   color:Navy;
-font-size:70px;
+font-size:50px;
   
 }
 
@@ -19,7 +22,7 @@ ul li a {
   ul{
     height:22%;
     Width:100%;
-    background:#97d6f7;
+    background:white;
     text-align: center;
     
   }
@@ -33,9 +36,4 @@ transform:translate(20%,30%);
 font-size:22px;
 
 
-}
-
-ul li a:hover{
-  color:black;
-  background:blue;
 }
