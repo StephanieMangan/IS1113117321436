@@ -94,11 +94,16 @@ font-size:22px;
 <br/>
 <br/>
 <p align = "center"> Thank you for choosing SM Technologies.
+<br/>
+<br/>
+<a href = "../homepage.html.html" class = "btn btn-dark">  Back To Home.</a>
 
 </p>
         </div>
         
-        
+        <br/>
+       <br/>
+       <br/>
       <br/>
        <br/>
        <br/>
