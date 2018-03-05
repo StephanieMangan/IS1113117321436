@@ -1,6 +1,8 @@
 <?php
-	session_start();
-	?>
+session_start();
+$name = $_REQUEST['name'];
+$email =$_REQUEST['email'];
+?>
 	<html>
 	    <head>
 	        <title>RECEIPT</title>
@@ -65,20 +67,13 @@ font-size:22px;
 	        <br/>
 	       
 	     
-	     <div id = "maincontent">
+	      <div id = "mainContent">
         <?php
         //Echo session varaibles that were set to the previous page
-        echo "Total Price is $" .$_SESSION["total"] . "."; 
-       ?>
-        <br>
-        <?php
-        //Echo session varaibles that were set to the previous page
-        echo "Name:" .$_SESSION["name"] . ".";
-        ?>
-       <br> 
-        <?php
-        //Echo session varaibles that were set to the previous page
-        echo "Email:" .$_SESSION["email"] . ".";
+        echo("<strong>Name: </strong>". $name);
+        echo("<br><br><strong>Email: </strong>". $email);
+        echo "<br><br><strong>Total Price is $</strong>" .$_SESSION["total"] . "."; 
+
         ?>
 
         <br/>
@@ -104,7 +99,29 @@ font-size:22px;
         </div>
         
         
-        <br/>
+      <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+
+         <br/>
        <br/>
        <br/>
        <br/>
@@ -122,14 +139,10 @@ font-size:22px;
                 <p></p>
                 <p><a href="mailto:117321436@umail.ucc.ie">117321436@umail.ucc.ie</a>
                 </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
+                
+                <br/>
+                <br/>
+              
             </div>
         </div>
     </section>
@@ -142,17 +155,14 @@ font-size:22px;
 	<div id="footerCV">
 		<div align = "center" id="social_media_icons" >
 		<ul>
-			<li><a href="http://www.facebook.com/" >
-				<img src=images/facebook.png id="icon_size" alt="facebook">
+			<li><a href="https://www.facebook.com/SM-Technologies-169852070222957/?notif_id=1520254152324891&notif_t=page_invite" >
+				<img src="https://seeklogo.com/images/F/facebook-logo-39A76724E4-seeklogo.com.png" style="width:30px;height:30px;"id="icon_size">
 			</a></li>	
-			<li><a href="https://www.instagram.com/" >
-				<img src=images/instagram.png id="icon_size" alt="instagram">
+			<li><a href="https://www.instagram.com/smtechnoligies/" >
+				<img src="https://upload.wikimedia.org/wikipedia/commons/3/30/The_Instagram_Logo.jpg" style="width:30px;height:30px;"id="icon_size">
 			</a></li>					
-			<li><a href="https://www.linkedin.com/in/" >
-				<img src=images/linkedin.png id="icon_size" alt="linkedin">
-			</a></li>	
-			<li><a href="https://twitter.com/" >
-				<img src=images/twitter.png id="icon_size" alt="twitter">
+			<li><a href="https://twitter.com/smtechnoligies" >
+				<img src="https://cdn.worldvectorlogo.com/logos/twitter-4.svg" style="width:30px;height:30px;"id="icon_size">
 			</a></li>						
 		</ul>	
 		</div>

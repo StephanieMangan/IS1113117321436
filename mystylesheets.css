@@ -10,7 +10,7 @@ h1 {
 .mainheading{
   text-align:center;
   color:Navy;
-font-size:50px;
+font-size:40px;
   
 }
 
@@ -22,7 +22,7 @@ ul li a {
   ul{
     height:22%;
     Width:100%;
-    background:white;
+    background:#6495ED;
     text-align: center;
     
   }
