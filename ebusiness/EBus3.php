@@ -102,7 +102,7 @@ font-size:22px;
 <p> Thank you for choosing SM Technologies.
 <br/>
 <br/>
-<a href = "homepage.html" class = "btn btn-dark">  Back To Home.</a>
+<a href = "../homepage.html" class = "btn btn-dark">  Back To Home.</a>
 
 </p>
         </div>
