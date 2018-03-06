@@ -2,7 +2,6 @@
 	function validateDetails(){
 	    
 	    var pin;
-	    
 	    pin = document.getElementById("user_pin").value;
 	    
 	    if (pin == ""){

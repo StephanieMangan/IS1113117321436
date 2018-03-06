@@ -4,6 +4,7 @@
 	        <title>Select Product</title>
 	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	        <script type = "text/javascript" src ="cost_calc.js"></script>
+	        <!--Adding style-->
 	        <style type = "text/css">
 h1 {
     color: Black;
@@ -98,10 +99,10 @@ font-size:22px;
 	        </style>
 	    </head>
 	    <body>
-	        
+	        <!--Adding a heading-->
 	         <h1 style="background-color:DodgerBlue;"  class="mainheading" > Select A Product </h1>
         
-        
+     <!--Adding the nav bar-->
       <ul>
   <li><a href="../homepage.html">Home</a></li>
   <li><a href="../Interests/Sports.html">Interests</a></li>
@@ -111,7 +112,7 @@ font-size:22px;
  
   
 </ul>
-	        
+	        <!--Putting in radio buttons-->
 	        <div id ="maincontent">
 	        <form method ="POST" action ="Ebus2.php">
 	            <label for = "salesforce">
@@ -135,6 +136,7 @@ font-size:22px;
 	            </label>
 	            
 	            <br><br><br>
+	            <!--Putting in buttons-->
 	            <label for ="subtotal">
 	            <Strong> &nbsp;  Sub Total:</Strong> 
 	              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "text" id="subtotal" name="subtotal" value="0.00" readonly/>
@@ -162,6 +164,7 @@ font-size:22px;
 	            <button type = "submit" id="btnProceed" disable>Add to Shopping Cart</button>
 	            </div>
 	            </form> 
+	            <!--Adding button that calculates the cost-->
 	            <div id ="button2">
 	          <button onClick="calcSub();calcDisVatTotal()">Calculate Cost</button>
 	          </div>
@@ -169,6 +172,7 @@ font-size:22px;
 	       
 	        
 	        <br/>
+	        <!--Button clears page--> 
 	        <div id ="button3">
 	        <a href="EBus1.php"><button>Clear Choice</a></button>
 	        </div>
@@ -229,19 +233,19 @@ font-size:22px;
        <br/>
        <br/>
 
-       <!--<footer>-->
+      <!--<footer>-->
 	<div id="footerCV">
 		<div id="social_media_icons" >
 		<ul>
-			<li><a href="https://www.facebook.com/SM-Technologies-169852070222957/?notif_id=1520254152324891&notif_t=page_invite" >
+			<li>
 				<img src="https://seeklogo.com/images/F/facebook-logo-39A76724E4-seeklogo.com.png" alt ="logo" style="width:30px;height:30px;">
-			</a></li>	
-			<li><a href="https://www.instagram.com/smtechnoligies/" >
+			</li>	
+			<li>
 				<img src="https://upload.wikimedia.org/wikipedia/commons/3/30/The_Instagram_Logo.jpg" alt ="logo" style="width:30px;height:30px;">
-			</a></li>					
-			<li><a href="https://twitter.com/smtechnoligies" >
+		</li>					
+			<li>
 				<img src="https://cdn.worldvectorlogo.com/logos/twitter-4.svg" alt ="logo" style="width:30px;height:30px;">
-			</a></li>						
+		</li>						
 		</ul>	
 		</div>
 		

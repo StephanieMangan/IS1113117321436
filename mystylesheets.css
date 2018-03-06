@@ -44,9 +44,8 @@ ul li{
   list-style: none;
   display: inline;
 position: relative;  
-margin-left:130px;
 transform:translate(20%,30%);
-font-size:22px;
-
+font-size:20px;
+margin-left:100px;
 
 }

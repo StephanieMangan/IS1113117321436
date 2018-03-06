@@ -10,6 +10,7 @@
 	        
 	        <!--jQuery-->
 	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	        <!--Adding style-->
 	         <style type = "text/css">
 	             #maincontent {
 	                  top:8em;
@@ -90,11 +91,12 @@ font-size:22px;
 	    </head>
 	    <body>
 	        
-	        
+	       <!--Adding a heading--> 
 	     <h1 align = "center" style="background-color:DodgerBlue;"  class="mainheading" > Enter Your Details </h1>
         
         
-      <ul>
+     <!--Adding the nav bar-->
+<ul>
  <li><a href="../homepage.html">Home</a></li>
   <li><a href="../Interests/Sports.html">Interests</a></li>
   <li><a href="../CV/CV_page1.html">CV</a></li>
@@ -197,19 +199,19 @@ font-size:22px;
        <br/>
        <br/>
 
-       <!--<footer>-->
+        <!--<footer>-->
 	<div id="footerCV">
 		<div id="social_media_icons" >
 		<ul>
-			<li><a href="https://www.facebook.com/SM-Technologies-169852070222957/?notif_id=1520254152324891&notif_t=page_invite" >
+			<li>
 				<img src="https://seeklogo.com/images/F/facebook-logo-39A76724E4-seeklogo.com.png" alt ="logo" style="width:30px;height:30px;">
-			</a></li>	
-			<li><a href="https://www.instagram.com/smtechnoligies/" >
+			</li>	
+			<li>
 				<img src="https://upload.wikimedia.org/wikipedia/commons/3/30/The_Instagram_Logo.jpg" alt ="logo" style="width:30px;height:30px;">
-			</a></li>					
-			<li><a href="https://twitter.com/smtechnoligies" >
+		</li>					
+			<li>
 				<img src="https://cdn.worldvectorlogo.com/logos/twitter-4.svg" alt ="logo" style="width:30px;height:30px;">
-			</a></li>						
+		</li>						
 		</ul>	
 		</div>
 		
