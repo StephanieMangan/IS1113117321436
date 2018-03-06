@@ -11,6 +11,11 @@ h1 {
     font-size: 250%;
     top:10em;
 	left:25em;
+    text-align:center;
+
+}
+   div {
+   	text-align:center;
 }
 ul {
     list-style-type: none;
@@ -94,7 +99,7 @@ font-size:22px;
 	    </head>
 	    <body>
 	        
-	         <h1 align = "center" style="background-color:DodgerBlue;"  class="mainheading" > Select A Product </h1>
+	         <h1 style="background-color:DodgerBlue;"  class="mainheading" > Select A Product </h1>
         
         
       <ul>
@@ -203,11 +208,11 @@ font-size:22px;
        <br/>
 
        
-       <!-- Contact Section -->
+        <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
-        <div  align = "center" class="row">
+        <div class="row">
 
-            <div align = "center"  class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact Me</h2>
                 <p></p>
                 <p><a href="mailto:117321436@umail.ucc.ie">117321436@umail.ucc.ie</a>
@@ -226,16 +231,16 @@ font-size:22px;
 
        <!--<footer>-->
 	<div id="footerCV">
-		<div align = "center" id="social_media_icons" >
+		<div id="social_media_icons" >
 		<ul>
 			<li><a href="https://www.facebook.com/SM-Technologies-169852070222957/?notif_id=1520254152324891&notif_t=page_invite" >
-				<img src="https://seeklogo.com/images/F/facebook-logo-39A76724E4-seeklogo.com.png" style="width:30px;height:30px;"id="icon_size">
+				<img src="https://seeklogo.com/images/F/facebook-logo-39A76724E4-seeklogo.com.png" alt ="logo" style="width:30px;height:30px;">
 			</a></li>	
 			<li><a href="https://www.instagram.com/smtechnoligies/" >
-				<img src="https://upload.wikimedia.org/wikipedia/commons/3/30/The_Instagram_Logo.jpg" style="width:30px;height:30px;"id="icon_size">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/3/30/The_Instagram_Logo.jpg" alt ="logo" style="width:30px;height:30px;">
 			</a></li>					
 			<li><a href="https://twitter.com/smtechnoligies" >
-				<img src="https://cdn.worldvectorlogo.com/logos/twitter-4.svg" style="width:30px;height:30px;"id="icon_size">
+				<img src="https://cdn.worldvectorlogo.com/logos/twitter-4.svg" alt ="logo" style="width:30px;height:30px;">
 			</a></li>						
 		</ul>	
 		</div>
@@ -244,7 +249,7 @@ font-size:22px;
 		<br/>
 		<br/>
 		
-		<div align = "Center" id="copyright">
+		<div id="copyright">
   		&copy; Stephanie Mangan
   		<p></p>
 	</div>
